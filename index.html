@@ -1,0 +1,512 @@
+<!--#16223C
+
+#01689A
+
+#F4989D
+
+#53CCB0
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Sistema Solar</title>
+</head>
+
+
+<body>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background" style="font-family: 'Nunito Sans',sans-serif;">
+                    <img src="imgSrc/vector-cartoon-space-illustration.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="imgSrc/astronaut(1).png"></a>
+                <p></p>
+                <a href="#email"><span class="white-text email" style="font-size: 20px; text-align: center;">Bem-vindo(a) pequeno(a) astronauta!</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
+
+    <div style="background-color: #0C163D; color: white;">
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons" style="font-size: 40px; color: rgba(127, 136, 172, 0.76); position: relative; left: 10px; top: 10px;">menu</i></a>
+    </div>
+
+
+    <div id = "background">
+        <div>
+            <!-- Modal Triggers -->
+            <a href="#modalSun" class="sun modal-trigger">
+                <img src="imgSrc/sun.png " style="width: 75%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalMercury" class="mercury modal-trigger">
+                <img src="imgSrc/mercury.png" style="width: 8%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalVenus" class="venus modal-trigger">
+                <img src="imgSrc/mars.png" style="width: 15%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalEarth" class="earth modal-trigger">
+                <img src="imgSrc/planet-earth.png" style="width: 25%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalMars" class="mars modal-trigger">
+                <img src="imgSrc/venus.png" style="width: 19%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalJupiter" class="jupiter modal-trigger">
+                <img src="imgSrc/jupiter.png" style="width: 35%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalSaturn" class="saturn modal-trigger zoomHover">
+                <img src="imgSrc/saturn.png" style="width: 35%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalUranus" class="uranus modal-trigger">
+                <img src="imgSrc/uranus.png" style="width: 45%;">
+            </a>
+        </div>
+        <div>
+            <a href="#modalNeptune" class="neptune modal-trigger">
+                <img src="imgSrc/neptune.png" style="width: 75%;">
+            </a>
+        </div>
+
+    
+        <!-- Modal Structure -->
+        <div id="modalSun" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/sun.png">
+                <p></p>
+                <h4>Sol</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaSun">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaSun">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalMercury" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/mercury.png">
+                <p></p>
+                <h4>Mercúrio</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaMercury">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaMercury">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalVenus" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/mars.png">
+                <p></p>
+                <h4>Vênus</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaVenus">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaVenus">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEarth" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/planet-earth.png">
+                <p></p>
+                <h4>Terra</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaEarth">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaEarth">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalMars" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/venus.png">
+                <p></p>
+                <h4>Marte</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaMars">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaMars">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalJupiter" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/jupiter.png">
+                <p></p>
+                <h4>Júpiter</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaJupiter">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaJupiter">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalSaturn" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/saturn.png">
+                <p></p>
+                <h4>Saturno</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaSaturn">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaSaturn">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalUranus" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/uranus.png">
+                <p></p>
+                <h4>Urano</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaUranus">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaUranus">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalNeptune" class="modal">
+            <div class="modal-content">
+                <img class="materialboxed center-block" width="200px" src="imgSrc/neptune.png">
+                <p></p>
+                <h4>Netuno</h4>
+                <button class="modal-close modal-trigger button" style="margin-bottom: 17px; margin-top: 0px;" href="#modalEnciclopediaNeptune">Enciclopédia</button>
+                <button class="modal-close modal-trigger button" href="#modalEstruturaNeptune">Estrutura</button>
+            </div>
+            <div class="modal-footer" style="background-color: rgba(12, 22, 61, 0);">
+                <a href="#!" class=" waves-effect waves-light modal-close btn-flat" style="color: white;">Fechar</a>
+            </div>
+        </div>
+
+        <!--Abrir Modal de Enciclopedia-->
+
+        <div id="modalEnciclopediaSun" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;" href="#modalSun"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4> 
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi reiciendis 
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEnciclopediaMercury" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalMercury"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+       
+        <div id="modalEnciclopediaVenus" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalVenus"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEnciclopediaEarth" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalEarth"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEnciclopediaMars" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalMars"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEnciclopediaJupiter" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalJupiter"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEnciclopediaSaturn" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalSaturn"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEnciclopediaUranus" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalUranus"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEnciclopediaNeptune" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalNeptune"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Enciclopédia</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <!--Abrir Modal de Estrutura-->
+
+        <div id="modalEstruturaSun" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalSun"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaMercury" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalMercury"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaVenus" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalVenus"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaEarth" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalEarth"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaMars" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalMars"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaJupiter" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalJupiter"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaSaturn" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalSaturn"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaUranus" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalUranus"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+        <div id="modalEstruturaNeptune" class="modal" style="background-color:  rgb(12, 22, 61); width: 700px;">
+            <div class="modal-content">
+                <a class=" modal-close modal-trigger" style="color: white; position:absolute; left: 0px; top: 0px;"
+                    href="#modalNeptune"><i class=" medium material-icons back">chevron_left</i></a>
+                <h4>Estrutura</h4>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam qui hic possimus nam animi
+                    reiciendis
+                    voluptatum aspernatur explicabo illo cum sit repudiandae consequuntur id ea, rerum aperiam, nemo ab.</p>
+            </div>
+            <div class="modal-footer" style="background-color:  rgba(12, 22, 61, 0.952);">
+                <a href="#!" class=" modal-close modal-trigger waves-effect waves-light btn-flat">Fechar</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="page-footer"  style="background-color:  rgba(12, 22, 61, 0.76);">
+        <div class="container">
+            Ramo Estudantil IEEE - UEL
+        </div>
+    </footer>
+    
+
+     <script>
+         M.AutoInit();
+     </script>
+
+
+</body>
+</html>
